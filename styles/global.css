@@ -1,0 +1,42 @@
+.slidev-layout.cover {
+  h1{
+    color: #30cfd0;
+  }
+}
+
+.slidev-layout.cover {
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /*
+   * 1. 第一个背景：一个从半透明白色到半透明白色的渐变（实际上就是一个纯色遮罩层）。
+   * rgba(255, 255, 255, 0.9) 中的 0.9 控制了遮罩的不透明度，值越高，原图越看不清。
+   * 2. 第二个背景：你原来的背景图片。
+   */
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95)), 
+    url('/ZJU-logo-anime.png');
+  
+  /* 如果你的页面本身有背景色，需要去掉 */
+  background-color: transparent;
+}
+
+/* .slidev-layout */
+.slidev-layout {
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /*
+   * 1. 第一个背景：一个从半透明白色到半透明白色的渐变（实际上就是一个纯色遮罩层）。
+   * rgba(255, 255, 255, 0.9) 中的 0.9 控制了遮罩的不透明度，值越高，原图越看不清。
+   * 2. 第二个背景：你原来的背景图片。
+   */
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.975), rgba(255, 255, 255, 0.996)), 
+    url('/ZJU-logo-anime.png');
+  
+  /* 如果你的页面本身有背景色，需要去掉 */
+  background-color: transparent;
+}
